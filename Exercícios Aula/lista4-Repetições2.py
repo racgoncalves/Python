@@ -78,3 +78,31 @@ for i in range(0,len(lista)-1):
 
 print("Na sequência",lista,"o comprimento do segmento crescente máximo é",max(listaSeq))
 '''
+
+#exercício 3 Professor
+'''
+n = int(input("Informe tamanho da seq: "))
+
+ant = int(input("Digite num da seq: "))
+comp = 1
+
+contador = 1
+
+maior = 1
+
+while contador < n:
+    atual = int(input("Digite num da seq: "))
+    contador = contador + 1
+    if ant < atual:
+        comp = comp + 1    
+    else:
+        comp = 1    
+
+    if comp > maior:
+        maior = comp
+
+    ant = atual
+
+print("O comprimento do segmento cresc maximo e", maior)
+'''
+
